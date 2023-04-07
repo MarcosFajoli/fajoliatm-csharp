@@ -16,7 +16,7 @@ namespace fajoliatm_csharp
         public Cliente Cliente { get { return cliente; } set { cliente = value; } }
         public double SaldoGeral { get { return saldoGeral; } set { saldoGeral = value; } }
 
-        internal ContaGeral(Cliente infoCliente, double saldo) 
+        internal ContaGeral (Cliente infoCliente, double saldo) 
         { 
             Random rand = new Random();
 
