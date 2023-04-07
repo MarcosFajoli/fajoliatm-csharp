@@ -1,0 +1,17 @@
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.exe
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.deps.json
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.runtimeconfig.json
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.dll
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.pdb
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.csproj.AssemblyReference.cache
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.Form1.resources
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.csproj.GenerateResource.cache
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.AssemblyInfoInputs.cache
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.AssemblyInfo.cs
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.csproj.CoreCompileInputs.cache
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.dll
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\refint\fajoliatm-csharp.dll
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.pdb
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.genruntimeconfig.cache
+C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\ref\fajoliatm-csharp.dll
