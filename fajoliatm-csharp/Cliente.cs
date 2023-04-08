@@ -10,13 +10,13 @@ namespace fajoliatm_csharp
     {
         private int id;
         private string nome;
-        private DateOnly dataNasc;
+        private DateTime dataNasc;
 
         public int Id { get { return id; } set { id = value; } }
         public string Nome { get { return nome; } set { nome = value; } }
-        public DateOnly DataNasc { get { return dataNasc; } set { dataNasc = value; } }
+        public DateTime DataNasc { get { return dataNasc; } set { dataNasc = value; } }
 
-        internal Cliente(string nomeCliente, DateOnly dataCliente)
+        internal Cliente(string nomeCliente, DateTime dataCliente)
         {
             Random rand = new Random();
 
