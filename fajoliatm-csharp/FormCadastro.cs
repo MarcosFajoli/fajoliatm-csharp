@@ -27,11 +27,11 @@ namespace fajoliatm_csharp
             DateTime dataAgora = DateTime.Now;
 
             // Verificações sobre as strings inseridas
-            if (ContemNumeros(nome) || ContemNomeInvalido(nome))
+            if (Validacoes.ContemNumeros(nome) || Validacoes.ContemNomeInvalido(nome))
             {
                 erros += "Escreva seu nome corretamente, sem dígitos ou caracteres especiais. \n\n";
             }
-            if (ContemCaracteresEspeciais(login))
+            if (Validacoes.ContemCaracteresEspeciais(login))
             {
                 erros += "Seu login não pode conter caracteres especiais. \n\n";
             }
@@ -50,27 +50,6 @@ namespace fajoliatm_csharp
                 Cliente cliente = new Cliente(nome, dataNasc);
                 ContaGeral contaGeral = new ContaGeral(cliente, 0);
             }
-        }
-
-        private bool ContemNumeros(string input)
-        {
-            // Define a expressão regular para procurar dígitos
-            Regex regex = new Regex(@"\d+");
-            return regex.IsMatch(input);
-        }
-
-        private bool ContemCaracteresEspeciais(string input)
-        {
-            // Define a expressão regular para caracteres especiais
-            Regex regex = new Regex(@"[^a-zA-Z0-9]");
-            return regex.IsMatch(input);
-        }
-
-        private bool ContemNomeInvalido(string input)
-        {
-            // Define a expressão regular para caracteres especiais
-            Regex regex = new Regex(@"^[a-zA-Z0-9\s]*$");
-            return !regex.IsMatch(input);
         }
     }
 }
