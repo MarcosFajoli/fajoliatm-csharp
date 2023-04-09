@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace fajoliatm_csharp
 {
-    internal class Cliente
+    public class Cliente
     {
         private int id;
         private string nome;
@@ -16,7 +16,7 @@ namespace fajoliatm_csharp
         public string Nome { get { return nome; } set { nome = value; } }
         public DateTime DataNasc { get { return dataNasc; } set { dataNasc = value; } }
 
-        internal Cliente(string nomeCliente, DateTime dataCliente)
+        public Cliente(string nomeCliente, DateTime dataCliente)
         {
             Random rand = new Random();
 

@@ -169,6 +169,7 @@
             ButtonVoltarMain.TabIndex = 21;
             ButtonVoltarMain.Text = "Voltar";
             ButtonVoltarMain.UseVisualStyleBackColor = false;
+            ButtonVoltarMain.Click += ButtonVoltarMain_Click;
             // 
             // FormCadastro
             // 
