@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace fajoliatm_csharp
 {
-	public partial class FormPaginaInicial : Form
-	{
-		public FormPaginaInicial ()
-		{
-		InitializeComponent();
-		}
-	}
+    public partial class FormPaginaInicial : Form
+    {
+        private ContaGeral contaAberta;
+        public FormPaginaInicial(ContaGeral conta)
+        {
+            InitializeComponent();
+            contaAberta = conta;
+
+            labelNome.Text = "Bem vindo(a), " + contaAberta.Cliente.Nome;
+        }
+    }
 }
