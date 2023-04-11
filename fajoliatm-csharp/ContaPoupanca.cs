@@ -25,10 +25,13 @@ namespace fajoliatm_csharp
 
 		public void Sacar (double valor)
 		{
-
+            if(valor > 1000.00)
+            {
+                Console.WriteLine("Não pode!!");
+            }
 		}
 
-		public void Depositar ( double valor )
+		public void Depositar (double valor)
 		{
 
 		}
