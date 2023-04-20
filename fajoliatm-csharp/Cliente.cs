@@ -16,5 +16,13 @@ namespace fajoliatm_csharp
         public string Nome { get { return nome; } set { nome = value; } }
         public DateTime DataNasc { get { return dataNasc; } set { dataNasc = value; } }
 
+        public Cliente(string nome, DateTime dataNasc) 
+        {
+            Random random = new Random();
+
+            this.Id = random.Next(100000, 999999);
+            this.Nome = nome;
+            this.DataNasc = dataNasc;
+        }
     }
 }

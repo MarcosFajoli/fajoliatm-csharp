@@ -7,11 +7,9 @@ namespace fajoliatm_csharp
             InitializeComponent();
         }
 
-        private void ButtonCadastrar_Click(object sender, EventArgs e)
+        private void ButtonTransferir_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormCadastro formCadastro = new FormCadastro(); 
-            formCadastro.ShowDialog();
+
         }
     }
 }

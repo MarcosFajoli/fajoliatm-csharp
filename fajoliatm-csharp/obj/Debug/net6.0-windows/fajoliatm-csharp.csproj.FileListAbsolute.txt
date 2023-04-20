@@ -14,9 +14,7 @@ C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-w
 C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.pdb
 C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.genruntimeconfig.cache
 C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\ref\fajoliatm-csharp.dll
-C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormCadastro.resources
 C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormMain.resources
-C:\Users\marco\source\repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormPaginaInicial.resources
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.exe
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.deps.json
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-windows\fajoliatm-csharp.runtimeconfig.json

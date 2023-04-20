@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace fajoliatm_csharp
 {
-	internal class ContaCorrente : ContaAbstract
+	internal class ContaCorrente : Conta
 	{
 		private int id;
 		private double saldo;
-		private ContaGeral contaGeral;
 
 		public int Id { get { return id; } set { id = value; } }
 		public double Saldo { get { return saldo; } set { saldo = value; } }
-		public ContaGeral ContaGeral { get { return contaGeral; } set { contaGeral = value; } }
 
-		public ContaCorrente ( ContaGeral conta, double saldoConta )
+		public ContaCorrente ( double saldoConta, string nome, DateTime dataNasc ) : base(nome, dataNasc)
 		{
-			this.Id = conta.Id;
-			this.ContaGeral = conta;
+			Random random = new Random();	
+
+			this.Id = random.Next(100000, 999999);
 			this.Saldo = saldoConta;
-		}
+        }
 	}
 }
