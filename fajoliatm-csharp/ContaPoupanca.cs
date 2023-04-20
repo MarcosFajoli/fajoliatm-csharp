@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace fajoliatm_csharp
 {
-    internal class ContaPoupanca : InterfaceConta
+    internal class ContaPoupanca
     {
         private int id;
         private double saldo;

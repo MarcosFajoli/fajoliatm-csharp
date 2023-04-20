@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace fajoliatm_csharp
 {
-	internal class ContaCorrente : InterfaceConta
+	internal class ContaCorrente : ContaAbstract
 	{
 		private int id;
 		private double saldo;
@@ -18,19 +18,9 @@ namespace fajoliatm_csharp
 
 		public ContaCorrente ( ContaGeral conta, double saldoConta )
 		{
-		Id = conta.Id;
-		ContaGeral = conta;
-		Saldo = saldoConta;
-		}
-
-		public void Sacar ( double valor )
-		{
-
-		}
-
-		public void Depositar ( double valor )
-		{
-
+			this.Id = conta.Id;
+			this.ContaGeral = conta;
+			this.Saldo = saldoConta;
 		}
 	}
 }

@@ -9,6 +9,7 @@ namespace fajoliatm_csharp
 
         private void ButtonCadastrar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormCadastro formCadastro = new FormCadastro(); 
             formCadastro.ShowDialog();
         }

@@ -47,8 +47,7 @@ namespace fajoliatm_csharp
             }
             else
             {
-                Cliente cliente = new Cliente(nome, dataNasc);
-                ContaGeral contaGeral = new ContaGeral(cliente, 0);
+                ContaGeral contaGeral = new ContaGeral(nome, dataNasc, 0);
 
                 FormPaginaInicial formPaginaInicial = new FormPaginaInicial(contaGeral);
                 formPaginaInicial.ShowDialog();
