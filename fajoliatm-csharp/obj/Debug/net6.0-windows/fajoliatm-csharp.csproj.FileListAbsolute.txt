@@ -34,3 +34,6 @@ C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-w
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.pdb
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.genruntimeconfig.cache
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\ref\fajoliatm-csharp.dll
+C:\Users\marco\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormCadastro.resources
+C:\Users\marco\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormSacarDepositar.resources
+C:\Users\marco\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormTransferencia.resources

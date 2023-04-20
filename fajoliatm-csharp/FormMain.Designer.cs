@@ -39,6 +39,7 @@
             LabelTipoConta = new Label();
             LabelNome = new Label();
             panel2 = new Panel();
+            label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             ComboBoxContas.Name = "ComboBoxContas";
             ComboBoxContas.Size = new Size(447, 23);
             ComboBoxContas.TabIndex = 0;
+            ComboBoxContas.SelectedIndexChanged += ComboBoxContas_SelectedIndexChanged;
             // 
             // ButtonCadastro
             // 
@@ -66,6 +68,7 @@
             ButtonCadastro.Text = "Cadastrar";
             ButtonCadastro.UseMnemonic = false;
             ButtonCadastro.UseVisualStyleBackColor = false;
+            ButtonCadastro.Click += ButtonCadastro_Click;
             // 
             // ButtonDepositar
             // 
@@ -122,6 +125,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(238, 224, 255);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(LabelSaldoValor);
             panel1.Controls.Add(LabelSaldo);
             panel1.Controls.Add(LabelTipoConta);
@@ -179,6 +183,15 @@
             panel2.Size = new Size(395, 236);
             panel2.TabIndex = 6;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(92, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 4;
+            label1.Text = "label1";
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -212,5 +225,6 @@
         private Label LabelSaldo;
         private Label LabelTipoConta;
         private Panel panel2;
+        private Label label1;
     }
 }
