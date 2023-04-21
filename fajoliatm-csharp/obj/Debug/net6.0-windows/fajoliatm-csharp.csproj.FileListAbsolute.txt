@@ -23,7 +23,6 @@ C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\bin\Debug\net6.0-w
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.csproj.AssemblyReference.cache
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormCadastro.resources
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormMain.resources
-C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormPaginaInicial.resources
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.csproj.GenerateResource.cache
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm-csharp.AssemblyInfoInputs.cache
@@ -37,3 +36,5 @@ C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-w
 C:\Users\marco\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormCadastro.resources
 C:\Users\marco\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormSacarDepositar.resources
 C:\Users\marco\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormTransferencia.resources
+C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormSacarDepositar.resources
+C:\Users\marce\Source\Repos\fajoliatm-csharp\fajoliatm-csharp\obj\Debug\net6.0-windows\fajoliatm_csharp.FormTransferencia.resources
