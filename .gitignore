@@ -1,0 +1,89 @@
+# Arquivos binários e executáveis gerados pelo Visual Studio
+*.exe
+*.dll
+*.pdb
+*.lib
+*.exp
+*.obj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.tlog
+*.tmp
+*.docstates
+
+# Arquivos temporários do Visual Studio
+ipch/
+[Oo]bj/
+[Bb]in/
+[Db]ebug*/
+[Rr]elease*/
+
+# Arquivos gerados pela ferramenta de geração de recursos do Visual Studio
+*.ResX
+
+# Arquivos de backup do Visual Studio
+*.[Bb]ak
+
+# Arquivos de configuração do NuGet
+*.nuget.config
+*.nuget.props
+*.nuget.targets
+
+# Arquivos de projeto
+*.csproj.user
+*.csproj.vspscc
+
+# Arquivos de saída dos instaladores ClickOnce
+publish/
+
+# Arquivos do Code Analysis
+*.ruleset
+*.dotSettings
+
+# Arquivos gerados pelo ReSharper
+_ReSharper*/
+
+# Arquivos gerados pelo TestDriven.NET
+TestResults/
+
+# Arquivos gerados pelo SQL Server Management Studio
+*.sqlproj.user
+*.ssisDeploymentManifest
+
+# Arquivos gerados pelo WiX
+*.wixproj
+*.wixout
+
+# Arquivos gerados pelo Entity Framework
+*.edmx
+*.tt
+*.model
+
+# Arquivos gerados pelo RDLC Report Designer
+*.rdlc
+
+# Arquivos gerados pelo Microsoft Dynamics CRM
+*.cd
+
+# Arquivos gerados pelo Visual Studio LightSwitch
+*.data
+
+# Arquivos gerados pelo ReSharper e pelo Rider
+.idea/
+*.sln.iml
+
+# Arquivos gerados pelo Visual Studio Code
+.vscode/

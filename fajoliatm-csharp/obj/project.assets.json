@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\marco\\.nuget\\packages\\": {}
+    "C:\\Users\\marce\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marco\\Source\\Repos\\fajoliatm-csharp\\fajoliatm-csharp\\fajoliatm-csharp.csproj",
+      "projectUniqueName": "C:\\Users\\marce\\Source\\Repos\\fajoliatm-csharp\\fajoliatm-csharp\\fajoliatm-csharp.csproj",
       "projectName": "fajoliatm-csharp",
-      "projectPath": "C:\\Users\\marco\\Source\\Repos\\fajoliatm-csharp\\fajoliatm-csharp\\fajoliatm-csharp.csproj",
-      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marco\\Source\\Repos\\fajoliatm-csharp\\fajoliatm-csharp\\obj\\",
+      "projectPath": "C:\\Users\\marce\\Source\\Repos\\fajoliatm-csharp\\fajoliatm-csharp\\fajoliatm-csharp.csproj",
+      "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marce\\Source\\Repos\\fajoliatm-csharp\\fajoliatm-csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

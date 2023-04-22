@@ -9,12 +9,12 @@ namespace fajoliatm_csharp
 	internal class ContaCorrente : Conta
 	{
 		private int id;
-		private double saldo;
+		private double saldo; 
 
 		public int Id { get { return id; } set { id = value; } }
 		public double Saldo { get { return saldo; } set { saldo = value; } }
 
-		public ContaCorrente ( double saldoConta, string nome, DateTime dataNasc ) : base(nome, dataNasc)
+		public ContaCorrente ( double saldoConta, string nome ) : base(nome)
 		{
 			Random random = new Random();	
 
