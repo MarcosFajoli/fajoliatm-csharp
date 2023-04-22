@@ -14,7 +14,7 @@ namespace fajoliatm_csharp
         public int Id { get { return id; } set { id = value; } }
         public double Saldo { get { return saldo; } set { saldo = value; } }
 
-        public ContaPoupanca (double saldoConta, string nome, DateTime dataNasc) : base(nome, dataNasc)
+        public ContaPoupanca (double saldoConta, string nome) : base(nome)
         {
             Random random = new Random();
 

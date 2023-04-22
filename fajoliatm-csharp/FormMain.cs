@@ -8,6 +8,7 @@ namespace fajoliatm_csharp
             List<string> items = new List<string>();
 
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
 
             ComboBoxContas.DataSource = items;
         }

@@ -15,6 +15,7 @@ namespace fajoliatm_csharp
         public FormTransferencia()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }
