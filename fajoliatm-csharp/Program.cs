@@ -16,17 +16,22 @@ namespace fajoliatm_csharp
 
             string files_accounts = "accounts.txt";
 
+            FormMain tela_main = new FormMain();
+            FormCadastro tela_cadastro = new FormCadastro();
+
             if (!File.Exists(files_accounts))
             {
                 File.Create(files_accounts).Close();
-                Application.Run(new FormCadastro());
+
+                tela_cadastro.ShowDialog();
+
             } else
             {
                 string conteudo = File.ReadAllText(files_accounts);
 
                 if (conteudo.Length == 0)
                 {
-                    Application.Run(new FormCadastro());
+                    tela_cadastro.ShowDialog();
                 }
                 else
                 {
