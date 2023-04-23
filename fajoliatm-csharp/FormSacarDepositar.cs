@@ -15,6 +15,7 @@ namespace fajoliatm_csharp
         public FormSacarDepositar()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

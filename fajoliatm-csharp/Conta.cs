@@ -8,7 +8,7 @@ namespace fajoliatm_csharp
 {
     internal class Conta : Cliente
     {
-        public Conta(string nome, DateTime dataNasc) : base(nome, dataNasc)
+        public Conta(string nome) : base(nome)
         {
 
         }
@@ -33,7 +33,6 @@ namespace fajoliatm_csharp
 
         public double Depositar(ContaPoupanca conta, double valor)
         {
-
             return conta.Saldo;
         }
     }
