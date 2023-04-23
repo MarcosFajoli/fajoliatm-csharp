@@ -28,188 +28,189 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ComboBoxContas = new ComboBox();
-            ButtonCadastro = new Button();
-            ButtonDepositar = new Button();
-            ButtonTransferir = new Button();
-            ButtonSacar = new Button();
-            panel1 = new Panel();
-            LabelSaldoValor = new Label();
-            LabelSaldo = new Label();
-            LabelTipoConta = new Label();
-            LabelNome = new Label();
-            panel2 = new Panel();
-            label1 = new Label();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.ComboBoxContas = new System.Windows.Forms.ComboBox();
+            this.ButtonCadastro = new System.Windows.Forms.Button();
+            this.ButtonDepositar = new System.Windows.Forms.Button();
+            this.ButtonTransferir = new System.Windows.Forms.Button();
+            this.ButtonSacar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LabelSaldoValor = new System.Windows.Forms.Label();
+            this.LabelSaldo = new System.Windows.Forms.Label();
+            this.LabelTipoConta = new System.Windows.Forms.Label();
+            this.LabelNome = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // ComboBoxContas
             // 
-            ComboBoxContas.FormattingEnabled = true;
-            ComboBoxContas.Location = new Point(100, 26);
-            ComboBoxContas.Name = "ComboBoxContas";
-            ComboBoxContas.Size = new Size(447, 23);
-            ComboBoxContas.TabIndex = 0;
-            ComboBoxContas.SelectedIndexChanged += ComboBoxContas_SelectedIndexChanged;
+            this.ComboBoxContas.FormattingEnabled = true;
+            this.ComboBoxContas.Location = new System.Drawing.Point(100, 26);
+            this.ComboBoxContas.Name = "ComboBoxContas";
+            this.ComboBoxContas.Size = new System.Drawing.Size(447, 23);
+            this.ComboBoxContas.TabIndex = 0;
             // 
             // ButtonCadastro
             // 
-            ButtonCadastro.BackColor = Color.FromArgb(151, 71, 255);
-            ButtonCadastro.FlatAppearance.BorderSize = 0;
-            ButtonCadastro.FlatAppearance.MouseDownBackColor = Color.FromArgb(140, 50, 255);
-            ButtonCadastro.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 50, 255);
-            ButtonCadastro.FlatStyle = FlatStyle.Flat;
-            ButtonCadastro.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonCadastro.ForeColor = SystemColors.ControlLightLight;
-            ButtonCadastro.Location = new Point(588, 10);
-            ButtonCadastro.Name = "ButtonCadastro";
-            ButtonCadastro.Size = new Size(181, 54);
-            ButtonCadastro.TabIndex = 1;
-            ButtonCadastro.Text = "Cadastrar";
-            ButtonCadastro.UseMnemonic = false;
-            ButtonCadastro.UseVisualStyleBackColor = false;
-            ButtonCadastro.Click += ButtonCadastro_Click;
+            this.ButtonCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
+            this.ButtonCadastro.FlatAppearance.BorderSize = 0;
+            this.ButtonCadastro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonCadastro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonCadastro.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonCadastro.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonCadastro.Location = new System.Drawing.Point(588, 10);
+            this.ButtonCadastro.Name = "ButtonCadastro";
+            this.ButtonCadastro.Size = new System.Drawing.Size(181, 54);
+            this.ButtonCadastro.TabIndex = 1;
+            this.ButtonCadastro.Text = "Cadastrar";
+            this.ButtonCadastro.UseMnemonic = false;
+            this.ButtonCadastro.UseVisualStyleBackColor = false;
+            this.ButtonCadastro.Click += new System.EventHandler(this.ButtonCadastro_Click_1);
             // 
             // ButtonDepositar
             // 
-            ButtonDepositar.BackColor = Color.FromArgb(151, 71, 255);
-            ButtonDepositar.FlatAppearance.BorderSize = 0;
-            ButtonDepositar.FlatAppearance.MouseDownBackColor = Color.FromArgb(140, 50, 255);
-            ButtonDepositar.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 50, 255);
-            ButtonDepositar.FlatStyle = FlatStyle.Flat;
-            ButtonDepositar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonDepositar.ForeColor = SystemColors.ControlLightLight;
-            ButtonDepositar.Location = new Point(144, 357);
-            ButtonDepositar.Name = "ButtonDepositar";
-            ButtonDepositar.Size = new Size(173, 79);
-            ButtonDepositar.TabIndex = 2;
-            ButtonDepositar.Text = "Depositar";
-            ButtonDepositar.UseMnemonic = false;
-            ButtonDepositar.UseVisualStyleBackColor = false;
+            this.ButtonDepositar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
+            this.ButtonDepositar.FlatAppearance.BorderSize = 0;
+            this.ButtonDepositar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonDepositar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonDepositar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonDepositar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonDepositar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonDepositar.Location = new System.Drawing.Point(144, 357);
+            this.ButtonDepositar.Name = "ButtonDepositar";
+            this.ButtonDepositar.Size = new System.Drawing.Size(173, 79);
+            this.ButtonDepositar.TabIndex = 2;
+            this.ButtonDepositar.Text = "Depositar";
+            this.ButtonDepositar.UseMnemonic = false;
+            this.ButtonDepositar.UseVisualStyleBackColor = false;
             // 
             // ButtonTransferir
             // 
-            ButtonTransferir.BackColor = Color.FromArgb(151, 71, 255);
-            ButtonTransferir.FlatAppearance.BorderSize = 0;
-            ButtonTransferir.FlatAppearance.MouseDownBackColor = Color.FromArgb(140, 50, 255);
-            ButtonTransferir.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 50, 255);
-            ButtonTransferir.FlatStyle = FlatStyle.Flat;
-            ButtonTransferir.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonTransferir.ForeColor = SystemColors.ControlLightLight;
-            ButtonTransferir.Location = new Point(510, 357);
-            ButtonTransferir.Name = "ButtonTransferir";
-            ButtonTransferir.Size = new Size(173, 79);
-            ButtonTransferir.TabIndex = 3;
-            ButtonTransferir.Text = "Transferir";
-            ButtonTransferir.UseMnemonic = false;
-            ButtonTransferir.UseVisualStyleBackColor = false;
-            ButtonTransferir.Click += ButtonTransferir_Click;
+            this.ButtonTransferir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
+            this.ButtonTransferir.FlatAppearance.BorderSize = 0;
+            this.ButtonTransferir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonTransferir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonTransferir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonTransferir.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonTransferir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonTransferir.Location = new System.Drawing.Point(510, 357);
+            this.ButtonTransferir.Name = "ButtonTransferir";
+            this.ButtonTransferir.Size = new System.Drawing.Size(173, 79);
+            this.ButtonTransferir.TabIndex = 3;
+            this.ButtonTransferir.Text = "Transferir";
+            this.ButtonTransferir.UseMnemonic = false;
+            this.ButtonTransferir.UseVisualStyleBackColor = false;
+            this.ButtonTransferir.Click += new System.EventHandler(this.ButtonTransferir_Click);
             // 
             // ButtonSacar
             // 
-            ButtonSacar.BackColor = Color.FromArgb(151, 71, 255);
-            ButtonSacar.FlatAppearance.BorderSize = 0;
-            ButtonSacar.FlatAppearance.MouseDownBackColor = Color.FromArgb(140, 50, 255);
-            ButtonSacar.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 50, 255);
-            ButtonSacar.FlatStyle = FlatStyle.Flat;
-            ButtonSacar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonSacar.ForeColor = SystemColors.ControlLightLight;
-            ButtonSacar.Location = new Point(327, 357);
-            ButtonSacar.Name = "ButtonSacar";
-            ButtonSacar.Size = new Size(173, 79);
-            ButtonSacar.TabIndex = 4;
-            ButtonSacar.Text = "Sacar";
-            ButtonSacar.UseMnemonic = false;
-            ButtonSacar.UseVisualStyleBackColor = false;
+            this.ButtonSacar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
+            this.ButtonSacar.FlatAppearance.BorderSize = 0;
+            this.ButtonSacar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonSacar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonSacar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSacar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonSacar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonSacar.Location = new System.Drawing.Point(327, 357);
+            this.ButtonSacar.Name = "ButtonSacar";
+            this.ButtonSacar.Size = new System.Drawing.Size(173, 79);
+            this.ButtonSacar.TabIndex = 4;
+            this.ButtonSacar.Text = "Sacar";
+            this.ButtonSacar.UseMnemonic = false;
+            this.ButtonSacar.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(238, 224, 255);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(LabelSaldoValor);
-            panel1.Controls.Add(LabelSaldo);
-            panel1.Controls.Add(LabelTipoConta);
-            panel1.Controls.Add(LabelNome);
-            panel1.Location = new Point(44, 86);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(395, 236);
-            panel1.TabIndex = 5;
-            // 
-            // LabelSaldoValor
-            // 
-            LabelSaldoValor.AutoSize = true;
-            LabelSaldoValor.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelSaldoValor.Location = new Point(140, 157);
-            LabelSaldoValor.Name = "LabelSaldoValor";
-            LabelSaldoValor.Size = new Size(199, 54);
-            LabelSaldoValor.TabIndex = 3;
-            LabelSaldoValor.Text = "R$ 000,00";
-            // 
-            // LabelSaldo
-            // 
-            LabelSaldo.AutoSize = true;
-            LabelSaldo.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelSaldo.Location = new Point(8, 146);
-            LabelSaldo.Name = "LabelSaldo";
-            LabelSaldo.Size = new Size(90, 37);
-            LabelSaldo.TabIndex = 2;
-            LabelSaldo.Text = "Saldo:";
-            // 
-            // LabelTipoConta
-            // 
-            LabelTipoConta.AutoSize = true;
-            LabelTipoConta.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelTipoConta.Location = new Point(8, 53);
-            LabelTipoConta.Name = "LabelTipoConta";
-            LabelTipoConta.Size = new Size(75, 30);
-            LabelTipoConta.TabIndex = 1;
-            LabelTipoConta.Text = "Conta:";
-            // 
-            // LabelNome
-            // 
-            LabelNome.AutoSize = true;
-            LabelNome.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelNome.Location = new Point(8, 6);
-            LabelNome.Name = "LabelNome";
-            LabelNome.Size = new Size(78, 30);
-            LabelNome.TabIndex = 0;
-            LabelNome.Text = "Nome:";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(214, 180, 255);
-            panel2.Location = new Point(36, 94);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(395, 236);
-            panel2.TabIndex = 6;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.LabelSaldoValor);
+            this.panel1.Controls.Add(this.LabelSaldo);
+            this.panel1.Controls.Add(this.LabelTipoConta);
+            this.panel1.Controls.Add(this.LabelNome);
+            this.panel1.Location = new System.Drawing.Point(44, 86);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(395, 236);
+            this.panel1.TabIndex = 5;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(92, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 4;
-            label1.Text = "label1";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(92, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
+            // LabelSaldoValor
+            // 
+            this.LabelSaldoValor.AutoSize = true;
+            this.LabelSaldoValor.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelSaldoValor.Location = new System.Drawing.Point(140, 157);
+            this.LabelSaldoValor.Name = "LabelSaldoValor";
+            this.LabelSaldoValor.Size = new System.Drawing.Size(199, 54);
+            this.LabelSaldoValor.TabIndex = 3;
+            this.LabelSaldoValor.Text = "R$ 000,00";
+            // 
+            // LabelSaldo
+            // 
+            this.LabelSaldo.AutoSize = true;
+            this.LabelSaldo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelSaldo.Location = new System.Drawing.Point(8, 146);
+            this.LabelSaldo.Name = "LabelSaldo";
+            this.LabelSaldo.Size = new System.Drawing.Size(90, 37);
+            this.LabelSaldo.TabIndex = 2;
+            this.LabelSaldo.Text = "Saldo:";
+            // 
+            // LabelTipoConta
+            // 
+            this.LabelTipoConta.AutoSize = true;
+            this.LabelTipoConta.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelTipoConta.Location = new System.Drawing.Point(8, 53);
+            this.LabelTipoConta.Name = "LabelTipoConta";
+            this.LabelTipoConta.Size = new System.Drawing.Size(75, 30);
+            this.LabelTipoConta.TabIndex = 1;
+            this.LabelTipoConta.Text = "Conta:";
+            // 
+            // LabelNome
+            // 
+            this.LabelNome.AutoSize = true;
+            this.LabelNome.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelNome.Location = new System.Drawing.Point(8, 6);
+            this.LabelNome.Name = "LabelNome";
+            this.LabelNome.Size = new System.Drawing.Size(78, 30);
+            this.LabelNome.TabIndex = 0;
+            this.LabelNome.Text = "Nome:";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.panel2.Location = new System.Drawing.Point(36, 94);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(395, 236);
+            this.panel2.TabIndex = 6;
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(805, 456);
-            Controls.Add(panel1);
-            Controls.Add(ButtonSacar);
-            Controls.Add(ButtonTransferir);
-            Controls.Add(ButtonDepositar);
-            Controls.Add(panel2);
-            Controls.Add(ButtonCadastro);
-            Controls.Add(ComboBoxContas);
-            Name = "FormMain";
-            Text = "Fajoli's Bank";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(805, 456);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ButtonSacar);
+            this.Controls.Add(this.ButtonTransferir);
+            this.Controls.Add(this.ButtonDepositar);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.ButtonCadastro);
+            this.Controls.Add(this.ComboBoxContas);
+            this.Name = "FormMain";
+            this.Text = "Fajoli\'s Bank";
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

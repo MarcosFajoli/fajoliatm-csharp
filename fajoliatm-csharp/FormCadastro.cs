@@ -40,7 +40,7 @@ namespace fajoliatm_csharp
                 return;
             }
 
-            if (!double.TryParse(valor_inicial_string, out double valor_inicial))
+            if (!decimal.TryParse(valor_inicial_string, out decimal valor_inicial))
             {
                 MessageBox.Show("Informe um valor inicial válido");
                 return;
