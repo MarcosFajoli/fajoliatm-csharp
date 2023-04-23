@@ -16,10 +16,6 @@ namespace fajoliatm_csharp
 
 		public ContaCorrente ( double saldoConta, string nome ) : base(nome)
 		{
-			Random random = new Random();	
-
-			this.Id = random.Next(100000, 999999);
-			this.Saldo = saldoConta;
         }
 	}
 }

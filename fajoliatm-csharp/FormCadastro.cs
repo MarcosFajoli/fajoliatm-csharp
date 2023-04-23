@@ -29,6 +29,8 @@ namespace fajoliatm_csharp
         {
             string path_accounts_file = "accounts.txt";
 
+            Random random = new Random();
+
             string nome_cliente = TextBoxNome.Text;
             string valor_inicial_string = ValorDeposito.Text;
 
@@ -50,53 +52,23 @@ namespace fajoliatm_csharp
                 return;
             }
 
-            Cliente cliente = new Cliente(nome_cliente);
-
             int tipoConta = TipoConta.SelectedIndex;
 
-            if (tipoConta == 0)
+            using (StreamWriter writer = new StreamWriter(path_accounts_file, true))
             {
-                Conta conta_cliente = new Conta(nome_cliente);
-                ContaCorrente conta_corrente_cliente = new ContaCorrente(valor_inicial, nome_cliente);
-
-                using (StreamWriter writer = new StreamWriter(path_accounts_file, true))
-                {
-                    var conta = (
-                        conta_corrente_cliente.Id,
-                        conta_corrente_cliente.Nome,
-                        TipoConta.Text,
-                        conta_corrente_cliente.Saldo
-                    );
-                    writer.WriteLine(conta);
-                }
-
-                FormMain form_principal = new FormMain();
-                form_principal.Show();
-                this.Hide();
-
+                var conta = (
+                    random.Next(100000, 999999),
+                    TextBoxNome.Text,
+                    TipoConta.Text,
+                    ValorDeposito.Text
+                );
+                writer.WriteLine(conta);
             }
-            else if (tipoConta == 1)
-            {
-                Conta conta_cliente = new Conta(nome_cliente);
-                ContaPoupanca conta_poupanca_cliente = new ContaPoupanca(valor_inicial, nome_cliente);
 
-                using (StreamWriter writer = new StreamWriter(path_accounts_file, true))
-                {
-                    var conta = (
-                        conta_poupanca_cliente.Id,
-                        conta_poupanca_cliente.Nome,
-                        TipoConta.Text,
-                        conta_poupanca_cliente.Saldo
-                    );
+            FormMain form_principal = new FormMain();
+            form_principal.Show();
+            this.Hide();
 
-                    writer.WriteLine(conta);
-                }
-
-                FormMain form_principal = new FormMain();
-                form_principal.Show();
-                this.Hide();
-
-            }
         }
     }
 }
