@@ -4,9 +4,10 @@ namespace fajoliatm_csharp
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+
+        public static FormMain tela_main = new FormMain();
+        public static FormCadastro tela_cadastro = new FormCadastro();
+
         [STAThread]
         static void Main()
         {
@@ -15,9 +16,6 @@ namespace fajoliatm_csharp
             ApplicationConfiguration.Initialize();
 
             string files_accounts = "accounts.txt";
-
-            FormMain tela_main = new FormMain();
-            FormCadastro tela_cadastro = new FormCadastro();
 
             if (!File.Exists(files_accounts))
             {
@@ -35,7 +33,7 @@ namespace fajoliatm_csharp
                 }
                 else
                 {
-                    Application.Run(new FormMain());
+                    Application.Run(tela_main);
                 }
             } 
         }
