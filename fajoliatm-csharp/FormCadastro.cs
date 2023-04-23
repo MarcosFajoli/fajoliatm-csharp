@@ -70,9 +70,8 @@ namespace fajoliatm_csharp
                     writer.WriteLine(conta);
                 }
 
-                FormMain form_principal = new FormMain();
-                form_principal.Show();
                 this.Hide();
+                Program.tela_main.ShowDialog();
 
             }
             else if (tipoConta == 1)
@@ -92,9 +91,8 @@ namespace fajoliatm_csharp
                     writer.WriteLine(conta);
                 }
 
-                FormMain form_principal = new FormMain();
-                form_principal.Show();
                 this.Hide();
+                Program.tela_main.ShowDialog();
 
             }
         }
