@@ -28,23 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ContaOrigem = new ComboBox();
             ButtonSacarDepositar = new Button();
             ValorSaqueDeposito = new TextBox();
-            LabelNome = new Label();
             label1 = new Label();
             LabelTipoConta = new Label();
             SaldoAtual = new TextBox();
             SuspendLayout();
-            // 
-            // ContaOrigem
-            // 
-            ContaOrigem.Enabled = false;
-            ContaOrigem.FormattingEnabled = true;
-            ContaOrigem.Location = new Point(35, 76);
-            ContaOrigem.Name = "ContaOrigem";
-            ContaOrigem.Size = new Size(256, 23);
-            ContaOrigem.TabIndex = 24;
             // 
             // ButtonSacarDepositar
             // 
@@ -62,29 +51,20 @@
             ButtonSacarDepositar.Text = "Sacar";
             ButtonSacarDepositar.UseMnemonic = false;
             ButtonSacarDepositar.UseVisualStyleBackColor = false;
+            ButtonSacarDepositar.Click += ButtonSacarDepositar_Click;
             // 
             // ValorSaqueDeposito
             // 
-            ValorSaqueDeposito.Location = new Point(35, 260);
+            ValorSaqueDeposito.Location = new Point(36, 218);
             ValorSaqueDeposito.Name = "ValorSaqueDeposito";
             ValorSaqueDeposito.Size = new Size(256, 23);
             ValorSaqueDeposito.TabIndex = 21;
-            // 
-            // LabelNome
-            // 
-            LabelNome.AutoSize = true;
-            LabelNome.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelNome.Location = new Point(30, 43);
-            LabelNome.Name = "LabelNome";
-            LabelNome.Size = new Size(177, 30);
-            LabelNome.TabIndex = 18;
-            LabelNome.Text = "Conta de origem";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(124, 220);
+            label1.Location = new Point(125, 178);
             label1.Name = "label1";
             label1.Size = new Size(78, 37);
             label1.TabIndex = 20;
@@ -94,7 +74,7 @@
             // 
             LabelTipoConta.AutoSize = true;
             LabelTipoConta.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelTipoConta.Location = new Point(30, 127);
+            LabelTipoConta.Location = new Point(31, 85);
             LabelTipoConta.Name = "LabelTipoConta";
             LabelTipoConta.Size = new Size(119, 30);
             LabelTipoConta.TabIndex = 19;
@@ -103,7 +83,7 @@
             // SaldoAtual
             // 
             SaldoAtual.Enabled = false;
-            SaldoAtual.Location = new Point(35, 160);
+            SaldoAtual.Location = new Point(36, 118);
             SaldoAtual.Name = "SaldoAtual";
             SaldoAtual.Size = new Size(256, 23);
             SaldoAtual.TabIndex = 25;
@@ -114,24 +94,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(321, 450);
             Controls.Add(SaldoAtual);
-            Controls.Add(ContaOrigem);
             Controls.Add(ButtonSacarDepositar);
             Controls.Add(ValorSaqueDeposito);
-            Controls.Add(LabelNome);
             Controls.Add(label1);
             Controls.Add(LabelTipoConta);
             Name = "FormSacarDepositar";
             Text = "FormSacarDepositar";
+            Load += FormSacarDepositar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private ComboBox ContaOrigem;
         private Button ButtonSacarDepositar;
         private TextBox ValorSaqueDeposito;
-        private Label LabelNome;
         private Label label1;
         private Label LabelTipoConta;
         private TextBox SaldoAtual;

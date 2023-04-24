@@ -27,46 +27,44 @@ namespace fajoliatm_csharp
 
         private void ButtonCadastrar_Click(object sender, EventArgs e)
         {
-            string path_accounts_file = "accounts.txt";
-
-            Random random = new Random();
-
             string nome_cliente = TextBoxNome.Text;
             string valor_inicial_string = ValorDeposito.Text;
+            int tipoConta = TipoConta.SelectedIndex;
+
+            Random random = new Random();
+            int id = random.Next(100000, 999999);
 
             if (string.IsNullOrWhiteSpace(nome_cliente))
             {
-                MessageBox.Show("Informe um nome válido");
+                MessageBox.Show("Informe um nome válido. ");
                 return;
             }
 
             if (!decimal.TryParse(valor_inicial_string, out decimal valor_inicial))
             {
-                MessageBox.Show("Informe um valor inicial válido");
+                MessageBox.Show("Informe um valor inicial válido. ");
                 return;
             }
 
-            if (TipoConta.SelectedIndex < 0)
+            if (tipoConta < 0)
             {
-                MessageBox.Show("Selecione um tipo de conta");
+                MessageBox.Show("Selecione um tipo de conta. ");
                 return;
             }
 
-            int tipoConta = TipoConta.SelectedIndex;
-
-            using (StreamWriter writer = new StreamWriter(path_accounts_file, true))
+            if (tipoConta == 0) //contacorrente
             {
-                var conta = (
-                    random.Next(100000, 999999),
-                    TextBoxNome.Text,
-                    TipoConta.Text,
-                    ValorDeposito.Text
-                );
-                writer.WriteLine(conta);
+                ContaCorrente contaCorrente = new ContaCorrente(id, valor_inicial, nome_cliente);
+                contaCorrente.Salvar();
+            } 
+            else //contapoupanca
+            {
+                ContaPoupanca contaPoupanca = new ContaPoupanca(id,valor_inicial, nome_cliente);
+                contaPoupanca.Salvar();
             }
 
-            this.Hide();
-            Program.tela_main.ShowDialog();
+            this.Close();
+            Program.tela_main.Show();
 
         }
     }

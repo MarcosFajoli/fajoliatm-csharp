@@ -13,14 +13,8 @@ namespace fajoliatm_csharp
     public partial class FormTransferencia : Form
     {
         private int index_conta_origem;
-        public FormTransferencia(int index_conta_origem)
-        {
-            InitializeComponent();
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.index_conta_origem = index_conta_origem;
-        }
 
-        private void FormTransferencia_Load(object sender, EventArgs e)
+        private void CarregarItems()
         {
             string path_accounts_file = "accounts.txt";
             List<string> items = new List<string>();
@@ -35,6 +29,23 @@ namespace fajoliatm_csharp
             }
 
             ContaDestino.DataSource = items;
+        }
+
+        public FormTransferencia(int index_conta_origem)
+        {
+            InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.index_conta_origem = index_conta_origem;
+        }
+
+        private void FormTransferencia_Load(object sender, EventArgs e)
+        {
+            CarregarItems();
+        }
+
+        private void FormTransferencia_Activated(object sender, EventArgs e)
+        {
+            CarregarItems();
         }
 
         private void ButtonTransferir_Click(object sender, EventArgs e)
