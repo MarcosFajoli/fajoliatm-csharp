@@ -15,11 +15,11 @@ namespace fajoliatm_csharp
 
         public virtual void Salvar() { }
 
-        public virtual void Sacar() { }
+        public virtual string Sacar(decimal valor) { return "erro"; }
 
-        public virtual void Depositar() { }
+        public virtual string Depositar(decimal valor) { return "erro"; }
 
-        public virtual void Transferir() { }
+        public virtual string Transferir() { return "erro"; }
 
     }
 }

@@ -36,5 +36,41 @@ namespace fajoliatm_csharp
                 writer.WriteLine(conta);
             }
         }
+
+        public override string Sacar(decimal valor)
+        {
+            if (this.Saldo < valor)
+            {
+                MessageBox.Show("Valor de saque maior que o contido. ");
+                return "erro";
+            }
+
+            if (valor > 1000)
+            {
+                MessageBox.Show("Contas poupança não podem sacar mais de 1000. ");
+                return "erro";
+            }
+
+            if (this.Saldo < (valor + decimal.Parse("0,1")))
+            {
+                MessageBox.Show("Valor de saque indisponível, após aplicada a taxação. ");
+                return "erro";
+            }
+
+            this.Saldo -= (valor + decimal.Parse("0,1"));
+
+            var conta_nova = Tuple.Create(Id, Nome, "Conta Poupança", Saldo);
+
+            return conta_nova.ToString();
+        }
+
+        public override string Depositar(decimal valor)
+        {
+            this.Saldo += valor;
+
+            var conta_nova = Tuple.Create(Id, Nome, "Conta Poupança", Saldo);
+
+            return conta_nova.ToString();
+        }
     }
 }

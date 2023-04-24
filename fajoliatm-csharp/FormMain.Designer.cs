@@ -34,8 +34,9 @@
             ButtonTransferir = new Button();
             ButtonSacar = new Button();
             panel1 = new Panel();
-            label1 = new Label();
-            LabelSaldoValor = new Label();
+            TipoConta = new Label();
+            NomeConta = new Label();
+            SaldoValor = new Label();
             LabelSaldo = new Label();
             LabelTipoConta = new Label();
             LabelNome = new Label();
@@ -50,6 +51,7 @@
             ComboBoxContas.Name = "ComboBoxContas";
             ComboBoxContas.Size = new Size(447, 23);
             ComboBoxContas.TabIndex = 0;
+            ComboBoxContas.SelectedIndexChanged += ComboBoxContas_SelectedIndexChanged;
             // 
             // ButtonCadastro
             // 
@@ -67,7 +69,7 @@
             ButtonCadastro.Text = "Cadastrar";
             ButtonCadastro.UseMnemonic = false;
             ButtonCadastro.UseVisualStyleBackColor = false;
-            ButtonCadastro.Click += ButtonCadastro_Click_1;
+            ButtonCadastro.Click += ButtonCadastro_Click;
             // 
             // ButtonDepositar
             // 
@@ -85,6 +87,7 @@
             ButtonDepositar.Text = "Depositar";
             ButtonDepositar.UseMnemonic = false;
             ButtonDepositar.UseVisualStyleBackColor = false;
+            ButtonDepositar.Click += ButtonDepositar_Click;
             // 
             // ButtonTransferir
             // 
@@ -120,12 +123,14 @@
             ButtonSacar.Text = "Sacar";
             ButtonSacar.UseMnemonic = false;
             ButtonSacar.UseVisualStyleBackColor = false;
+            ButtonSacar.Click += ButtonSacar_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(238, 224, 255);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(LabelSaldoValor);
+            panel1.Controls.Add(TipoConta);
+            panel1.Controls.Add(NomeConta);
+            panel1.Controls.Add(SaldoValor);
             panel1.Controls.Add(LabelSaldo);
             panel1.Controls.Add(LabelTipoConta);
             panel1.Controls.Add(LabelNome);
@@ -134,24 +139,35 @@
             panel1.Size = new Size(395, 236);
             panel1.TabIndex = 5;
             // 
-            // label1
+            // TipoConta
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(92, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 4;
-            label1.Text = "label1";
+            TipoConta.AutoSize = true;
+            TipoConta.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            TipoConta.Location = new Point(92, 53);
+            TipoConta.Name = "TipoConta";
+            TipoConta.Size = new Size(99, 30);
+            TipoConta.TabIndex = 5;
+            TipoConta.Text = "Corrente";
             // 
-            // LabelSaldoValor
+            // NomeConta
             // 
-            LabelSaldoValor.AutoSize = true;
-            LabelSaldoValor.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelSaldoValor.Location = new Point(140, 157);
-            LabelSaldoValor.Name = "LabelSaldoValor";
-            LabelSaldoValor.Size = new Size(199, 54);
-            LabelSaldoValor.TabIndex = 3;
-            LabelSaldoValor.Text = "R$ 000,00";
+            NomeConta.AutoSize = true;
+            NomeConta.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            NomeConta.Location = new Point(92, 6);
+            NomeConta.Name = "NomeConta";
+            NomeConta.Size = new Size(140, 30);
+            NomeConta.TabIndex = 4;
+            NomeConta.Text = "Fulano de Tal";
+            // 
+            // SaldoValor
+            // 
+            SaldoValor.AutoSize = true;
+            SaldoValor.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            SaldoValor.Location = new Point(177, 137);
+            SaldoValor.Name = "SaldoValor";
+            SaldoValor.Size = new Size(199, 54);
+            SaldoValor.TabIndex = 3;
+            SaldoValor.Text = "R$ 000,00";
             // 
             // LabelSaldo
             // 
@@ -159,9 +175,9 @@
             LabelSaldo.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             LabelSaldo.Location = new Point(8, 146);
             LabelSaldo.Name = "LabelSaldo";
-            LabelSaldo.Size = new Size(90, 37);
+            LabelSaldo.Size = new Size(156, 37);
             LabelSaldo.TabIndex = 2;
-            LabelSaldo.Text = "Saldo:";
+            LabelSaldo.Text = "Saldo atual:";
             // 
             // LabelTipoConta
             // 
@@ -222,10 +238,11 @@
         private Button ButtonSacar;
         private Panel panel1;
         private Label LabelNome;
-        private Label LabelSaldoValor;
+        private Label SaldoValor;
         private Label LabelSaldo;
         private Label LabelTipoConta;
         private Panel panel2;
-        private Label label1;
+        private Label NomeConta;
+        private Label TipoConta;
     }
 }
