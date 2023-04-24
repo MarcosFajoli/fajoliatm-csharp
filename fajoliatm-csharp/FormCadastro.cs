@@ -64,7 +64,7 @@ namespace fajoliatm_csharp
             }
 
             this.Close();
-            Program.tela_main.Show();
+            Program.tela_main.ShowDialog();
 
         }
     }
