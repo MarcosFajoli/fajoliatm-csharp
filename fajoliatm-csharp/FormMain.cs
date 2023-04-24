@@ -62,7 +62,7 @@ namespace fajoliatm_csharp
 
         private void ButtonCadastro_Click(object sender, EventArgs e)
         {
-            FormCadastro tela_cadastro = new FormCadastro();
+            FormCadastro tela_cadastro = new FormCadastro(false);
             this.Hide();
             tela_cadastro.ShowDialog();
         }

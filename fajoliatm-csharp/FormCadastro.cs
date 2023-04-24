@@ -14,10 +14,12 @@ namespace fajoliatm_csharp
 {
     public partial class FormCadastro : Form
     {
-        public FormCadastro()
+        public bool first_time;
+        public FormCadastro(bool first_time = false)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.first_time = first_time;
         }
 
         private void FormCadastro_Load(object sender, EventArgs e)
@@ -63,8 +65,16 @@ namespace fajoliatm_csharp
                 contaPoupanca.Salvar();
             }
 
-            this.Close();
-            Program.tela_main.ShowDialog();
+            if (this.first_time)
+            {
+                this.Close();
+                Program.tela_main.ShowDialog();
+                this.first_time = true;
+            } else
+            {
+                this.Close();
+                Program.tela_main.Show();
+            }
 
         }
     }

@@ -6,7 +6,7 @@ namespace fajoliatm_csharp
     {
 
         public static FormMain tela_main = new FormMain();
-        public static FormCadastro tela_cadastro = new FormCadastro();
+        public static FormCadastro tela_cadastro = new FormCadastro(true);
 
         [STAThread]
         static void Main()
