@@ -13,27 +13,13 @@ namespace fajoliatm_csharp
 
         }
 
-        public double Sacar(ContaCorrente conta, double valor)
-        {
+        public virtual void Salvar() { }
 
-            return conta.Saldo;
-        }
+        public virtual void Sacar() { }
 
-        public double Sacar(ContaPoupanca conta, double valor)
-        {
+        public virtual void Depositar() { }
 
-            return conta.Saldo;
-        }
+        public virtual void Transferir() { }
 
-        public double Depositar(ContaCorrente conta, double valor)
-        {
-
-            return conta.Saldo;
-        }
-
-        public double Depositar(ContaPoupanca conta, double valor)
-        {
-            return conta.Saldo;
-        }
     }
 }

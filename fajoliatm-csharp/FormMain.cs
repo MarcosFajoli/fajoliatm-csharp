@@ -2,6 +2,7 @@ namespace fajoliatm_csharp
 {
     public partial class FormMain : Form
     {
+        private int index_conta_origem;
 
         public FormMain()
         {
@@ -9,7 +10,7 @@ namespace fajoliatm_csharp
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void CarregarItems()
         {
             string path_accounts_file = "accounts.txt";
             List<string> items = new List<string>();
@@ -28,6 +29,15 @@ namespace fajoliatm_csharp
             ComboBoxContas.DataSource = items;
         }
 
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            CarregarItems();
+        }
+        private void FormMain_Activated(object sender, EventArgs e)
+        {
+            CarregarItems();
+        }
+
         private void ButtonCadastro_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -36,11 +46,11 @@ namespace fajoliatm_csharp
 
         private void ButtonTransferir_Click(object sender, EventArgs e)
         {
-            int index_conta_origem = ComboBoxContas.SelectedIndex;
-            FormTransferencia tela_transferecia = new FormTransferencia(index_conta_origem);
+            index_conta_origem = ComboBoxContas.SelectedIndex;
+            FormTransferencia tela_transferencia = new FormTransferencia(index_conta_origem);
 
             this.Hide();
-            tela_transferecia.Show();
+            tela_transferencia.Show();
         }
     }
 }

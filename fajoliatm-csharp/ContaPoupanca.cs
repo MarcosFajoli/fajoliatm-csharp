@@ -9,17 +9,32 @@ namespace fajoliatm_csharp
     internal class ContaPoupanca : Conta
     {
         private int id;
-        private double saldo;
+        private decimal saldo;
 
         public int Id { get { return id; } set { id = value; } }
-        public double Saldo { get { return saldo; } set { saldo = value; } }
+        public decimal Saldo { get { return saldo; } set { saldo = value; } }
 
-        public ContaPoupanca (double saldoConta, string nome) : base(nome)
+        public ContaPoupanca (int id, decimal saldoConta, string nome) : base(nome)
         {
+            Id = id;
+            Saldo = saldoConta;
+        }
+
+        public override void Salvar()
+        {
+            string path_accounts_file = "accounts.txt";
             Random random = new Random();
 
-            this.Id = random.Next(100000, 999999);
-            this.Saldo = saldoConta;
+            using (StreamWriter writer = new StreamWriter(path_accounts_file, true))
+            {
+                var conta = (
+                    Id,
+                    Nome,
+                    "Conta Poupanca",
+                    Saldo
+                );
+                writer.WriteLine(conta);
+            }
         }
     }
 }
