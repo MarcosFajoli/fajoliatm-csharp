@@ -62,8 +62,9 @@ namespace fajoliatm_csharp
 
         private void ButtonCadastro_Click(object sender, EventArgs e)
         {
+            FormCadastro tela_cadastro = new FormCadastro();
             this.Hide();
-            Program.tela_cadastro.Show();
+            tela_cadastro.ShowDialog();
         }
 
         private void ButtonTransferir_Click(object sender, EventArgs e)
@@ -72,7 +73,7 @@ namespace fajoliatm_csharp
             FormTransferencia tela_transferencia = new FormTransferencia(index_conta_origem);
 
             this.Hide();
-            tela_transferencia.Show();
+            tela_transferencia.ShowDialog();
         }
 
         private void ButtonSacar_Click(object sender, EventArgs e)
@@ -81,7 +82,7 @@ namespace fajoliatm_csharp
             FormSacarDepositar tela_saque = new FormSacarDepositar(index_conta_origem, "Sacar");
 
             this.Hide();
-            tela_saque.Show();
+            tela_saque.ShowDialog();
         }
 
         private void ButtonDepositar_Click(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace fajoliatm_csharp
             FormSacarDepositar tela_deposito = new FormSacarDepositar(index_conta_origem, "Depositar");
 
             this.Hide();
-            tela_deposito.Show();
+            tela_deposito.ShowDialog();
         }
 
         private void ComboBoxContas_SelectedIndexChanged(object sender, EventArgs e)
