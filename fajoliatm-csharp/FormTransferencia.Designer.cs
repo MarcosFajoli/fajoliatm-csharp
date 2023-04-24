@@ -28,112 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ButtonTransferir = new Button();
-            ValorTransferencia = new TextBox();
-            LabelNome = new Label();
-            label1 = new Label();
-            ContaDestino = new ComboBox();
-            LabelTipoConta = new Label();
-            ContaOrigem = new ComboBox();
-            SuspendLayout();
+            this.ButtonTransferir = new System.Windows.Forms.Button();
+            this.ValorTransferencia = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ContaDestino = new System.Windows.Forms.ComboBox();
+            this.LabelTipoConta = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // ButtonTransferir
             // 
-            ButtonTransferir.BackColor = Color.FromArgb(151, 71, 255);
-            ButtonTransferir.FlatAppearance.BorderSize = 0;
-            ButtonTransferir.FlatAppearance.MouseDownBackColor = Color.FromArgb(140, 50, 255);
-            ButtonTransferir.FlatAppearance.MouseOverBackColor = Color.FromArgb(140, 50, 255);
-            ButtonTransferir.FlatStyle = FlatStyle.Flat;
-            ButtonTransferir.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            ButtonTransferir.ForeColor = SystemColors.ControlLightLight;
-            ButtonTransferir.Location = new Point(78, 329);
-            ButtonTransferir.Name = "ButtonTransferir";
-            ButtonTransferir.Size = new Size(173, 79);
-            ButtonTransferir.TabIndex = 16;
-            ButtonTransferir.Text = "Transferir";
-            ButtonTransferir.UseMnemonic = false;
-            ButtonTransferir.UseVisualStyleBackColor = false;
+            this.ButtonTransferir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(71)))), ((int)(((byte)(255)))));
+            this.ButtonTransferir.FlatAppearance.BorderSize = 0;
+            this.ButtonTransferir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonTransferir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(50)))), ((int)(((byte)(255)))));
+            this.ButtonTransferir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonTransferir.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonTransferir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ButtonTransferir.Location = new System.Drawing.Point(78, 290);
+            this.ButtonTransferir.Name = "ButtonTransferir";
+            this.ButtonTransferir.Size = new System.Drawing.Size(173, 79);
+            this.ButtonTransferir.TabIndex = 16;
+            this.ButtonTransferir.Text = "Transferir";
+            this.ButtonTransferir.UseMnemonic = false;
+            this.ButtonTransferir.UseVisualStyleBackColor = false;
+            this.ButtonTransferir.Click += new System.EventHandler(this.ButtonTransferir_Click);
             // 
             // ValorTransferencia
             // 
-            ValorTransferencia.Location = new Point(35, 260);
-            ValorTransferencia.Name = "ValorTransferencia";
-            ValorTransferencia.Size = new Size(256, 23);
-            ValorTransferencia.TabIndex = 14;
-            // 
-            // LabelNome
-            // 
-            LabelNome.AutoSize = true;
-            LabelNome.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelNome.Location = new Point(30, 43);
-            LabelNome.Name = "LabelNome";
-            LabelNome.Size = new Size(177, 30);
-            LabelNome.TabIndex = 10;
-            LabelNome.Text = "Conta de origem";
+            this.ValorTransferencia.Location = new System.Drawing.Point(35, 221);
+            this.ValorTransferencia.Name = "ValorTransferencia";
+            this.ValorTransferencia.Size = new System.Drawing.Size(256, 23);
+            this.ValorTransferencia.TabIndex = 14;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(124, 220);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 37);
-            label1.TabIndex = 12;
-            label1.Text = "Valor";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(124, 181);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 37);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Valor";
             // 
             // ContaDestino
             // 
-            ContaDestino.FormattingEnabled = true;
-            ContaDestino.Location = new Point(35, 160);
-            ContaDestino.Name = "ContaDestino";
-            ContaDestino.Size = new Size(256, 23);
-            ContaDestino.TabIndex = 15;
+            this.ContaDestino.FormattingEnabled = true;
+            this.ContaDestino.Location = new System.Drawing.Point(35, 121);
+            this.ContaDestino.Name = "ContaDestino";
+            this.ContaDestino.Size = new System.Drawing.Size(256, 23);
+            this.ContaDestino.TabIndex = 15;
             // 
             // LabelTipoConta
             // 
-            LabelTipoConta.AutoSize = true;
-            LabelTipoConta.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelTipoConta.Location = new Point(30, 127);
-            LabelTipoConta.Name = "LabelTipoConta";
-            LabelTipoConta.Size = new Size(178, 30);
-            LabelTipoConta.TabIndex = 11;
-            LabelTipoConta.Text = "Conta de destino";
-            // 
-            // ContaOrigem
-            // 
-            ContaOrigem.FormattingEnabled = true;
-            ContaOrigem.Location = new Point(35, 76);
-            ContaOrigem.Name = "ContaOrigem";
-            ContaOrigem.Size = new Size(256, 23);
-            ContaOrigem.TabIndex = 17;
+            this.LabelTipoConta.AutoSize = true;
+            this.LabelTipoConta.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelTipoConta.Location = new System.Drawing.Point(30, 88);
+            this.LabelTipoConta.Name = "LabelTipoConta";
+            this.LabelTipoConta.Size = new System.Drawing.Size(178, 30);
+            this.LabelTipoConta.TabIndex = 11;
+            this.LabelTipoConta.Text = "Conta de destino";
             // 
             // FormTransferencia
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(321, 450);
-            Controls.Add(ContaOrigem);
-            Controls.Add(ButtonTransferir);
-            Controls.Add(ValorTransferencia);
-            Controls.Add(LabelNome);
-            Controls.Add(label1);
-            Controls.Add(ContaDestino);
-            Controls.Add(LabelTipoConta);
-            Name = "FormTransferencia";
-            Text = "FormTransferencia";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(321, 450);
+            this.Controls.Add(this.ButtonTransferir);
+            this.Controls.Add(this.ValorTransferencia);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ContaDestino);
+            this.Controls.Add(this.LabelTipoConta);
+            this.Name = "FormTransferencia";
+            this.Text = "FormTransferencia";
+            this.Load += new System.EventHandler(this.FormTransferencia_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private Button ButtonTransferir;
         private TextBox ValorTransferencia;
-        private Label LabelNome;
         private Label label1;
         private ComboBox ContaDestino;
         private Label LabelTipoConta;
-        private ComboBox ContaOrigem;
     }
 }
